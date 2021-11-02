@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+.nav__header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav__header nav ul {
+  list-style: none;
+}
+
+.nav__header nav ul li {
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.nav__header nav ul li a:last-child {
+  margin-right: 2em;
+}
+
+button {
+  cursor: pointer;
+  background-color: #f08429;
+  color: white;
+  border: none;
+  padding: 6px;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.app-home .app-home__wrapper {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  width: 952px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.app-home .app-home__wrapper section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.app-home .app-home__wrapper section .main .main__header {
+  background-color: #283A97;
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.app-home .app-home__wrapper section .main .main__header img {
+  float: right;
+}
+
+.app-home .app-home__wrapper section .main .main__user-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-column-gap: 2px;
+          column-gap: 2px;
+}
+
+.app-home .app-home__wrapper section .main .main__user-bar .main__user-bar_logo {
+  background-color: #f2f2f2;
+  padding: 5px;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.app-home .app-home__wrapper section .main .main__user-bar .main__user-bar_searcher {
+  background-color: #f2f2f2;
+  padding: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2px;
+          column-gap: 2px;
+}
+
+.app-home .app-home__wrapper section .main .main__user-bar .main__user-bar_searcher::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+.app-home .app-home__wrapper section .main .main__user-bar .main__user-bar_searcher:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+.app-home .app-home__wrapper section .main .main__user-bar .main__user-bar_searcher::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+.app-home .app-home__wrapper section .main .main__user-bar .main__user-bar_searcher::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+.app-home .app-home__wrapper section .main .main__user-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2px;
+          column-gap: 2px;
+  margin-top: 10px;
+}
+
+.app-home .app-home__wrapper section .main .main__user-menu .main__user-menu_item {
+  background-color: #199fd9;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
+
+.app-home .app-home__wrapper section .main .main__user-menu .main__user-menu_item figcaption {
+  margin-bottom: 3px;
+}
+
+.app-home .app-home__wrapper section .main .main__user-menu .main__user-menu_item.isActive {
+  background-color: #283A97;
+}
+
+.app-home .app-home__wrapper section .main .main__breadcrumbs {
+  margin: 1rem;
+  font-size: 10px;
+}
+
+.app-home .app-home__wrapper section .main .main__breadcrumbs a {
+  text-decoration: none;
+  color: #f08429;
+  cursor: pointer;
+}
+
+.app-home .app-home__wrapper section .main .main__breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.app-home .app-home__wrapper section .aside {
+  color: white;
+}
+
+.app-home .app-home__wrapper section .aside span {
+  font-weight: bold;
+}
+
+.app-home .app-home__wrapper section .aside p {
+  font-size: 12px;
+}
+
+.app-home .app-home__wrapper section .aside .aside__user-area {
+  background-color: #199fd9;
+  padding: 10px 12px;
+}
+
+.app-home .app-home__wrapper section .aside .aside__user-area .aside__user-area_personal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.app-home .app-home__wrapper section .aside .aside__user-area .aside__user-area_personal p {
+  font-size: 10px;
+}
+
+.app-home .app-home__wrapper section .aside .aside__user-area .aside__user-area_personal .aside__user-area_personal_settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3px;
+          column-gap: 3px;
+}
+
+.app-home .app-home__wrapper section .aside .aside__user-area .aside__user-area_personal .aside-user-area_personal_email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+.app-home .app-home__wrapper section .aside .aside__information {
+  background-color: #f2f2f2;
+  margin-top: 10px;
+  padding: 10px 12px;
+  color: #283A97;
+}
+
+.app-home .app-home__wrapper section .aside .aside__information .aside__information_content {
+  background-color: white;
+  color: #76645d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.app-home .app-home__wrapper section .aside .aside__information .aside__information_content p {
+  margin: 1rem;
+}
+
+.app-home .app-home__wrapper section .aside .aside__information .aside__information_content .aside__information_content_video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app-home .app-home__wrapper section .aside .aside__information .aside__information_content .aside__information_content_video p {
+  color: #f08429;
+}
+
+.app-home .app-home__wrapper section .aside .aside__information .aside__information_content .aside__information_content_video img {
+  margin: 1rem;
+}
+
+.app-home header.en li span:last-child {
+  display: none;
+}
+
+.app-home header.ar li span:first-child {
+  display: none;
+}
+
+h4,
+p {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */

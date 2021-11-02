@@ -1,0 +1,8 @@
+@mixin anchor-orange {
+    text-decoration: none;
+    color: $color-orange;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}

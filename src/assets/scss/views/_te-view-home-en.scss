@@ -1,0 +1,22 @@
+.header__nav,
+.footer__nav {
+    &.en {
+        li {
+            span {
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.footer__information {
+    &.en {
+        span {
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}

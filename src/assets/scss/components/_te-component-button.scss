@@ -1,0 +1,14 @@
+button {
+    cursor: pointer;
+    background-color: $color-orange;
+    color: $color-white;
+    border: none;
+    padding: 6px;
+    background-image: linear-gradient( to bottom, rgba($color-white, 0.5), rgba($color-white, 0.2) 50%, rgba(black, 0.05) 50%, rgba(black, 0.025));
+    background-repeat: repeat-x;
+    &::after {
+        content: ">";
+        color: $color-white;
+        margin-left: 1rem;
+    }
+}

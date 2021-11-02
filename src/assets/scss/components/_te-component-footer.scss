@@ -1,0 +1,27 @@
+    @import '../mixins/mixins.scss';
+    footer {
+        @include flex;
+        @include row;
+        justify-content: center;
+        align-items: baseline;
+        column-gap: 5rem;
+    }
+    
+    footer {
+        margin-top: 1rem;
+        font-family: $primary-font;
+        font-size: 12px;
+        .footer__nav {
+            nav {
+                @include nav;
+            }
+        }
+        .footer__information {
+            p {
+                text-align: right;
+                a {
+                    @include anchor-blue;
+                }
+            }
+        }
+    }

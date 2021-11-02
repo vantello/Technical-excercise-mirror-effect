@@ -1,0 +1,6 @@
+@import '../mixins/mixins.scss';
+body {
+    background-color: $color-gray-light;
+    width: $max-width;
+    @include content-center;
+}

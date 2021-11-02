@@ -1,0 +1,162 @@
+<div class="app-home__wrapper">
+    <header class="header__nav" [ngClass]="isEnglish ? 'en': 'ar'">
+        <nav>
+            <ul>
+                <li>
+                    <span>Site Map</span>
+                    <span>خريطة الموقع</span>
+                </li>
+                <li>
+                    <span>Contact Us</span>
+                    <span>اتصل بنا</span>
+                </li>
+                <li>
+                    <span>Locations</span>
+                    <span>المواقع</span>
+                </li>
+                <li>
+                    <span>Help</span>
+                    <span>يساعد</span>
+                </li>
+                <li>
+                    <span>FAQ'S</span>
+                    <span>لغة</span>
+                </li>
+                <li>
+                    <a (click)="isEnglish=!isEnglish">
+                        <span>إنجليزي</span>
+                        <span>English</span>
+                    </a>
+                </li>
+            </ul>
+            <app-button>Log Out</app-button>
+        </nav>
+    </header>
+    <section [ngClass]="isEnglish ? 'en': 'ar'">
+        <main class="main">
+            <header class="main__header">
+                <img src="../../../../assets/images/logo_bank.png" alt="banklogo">
+            </header>
+            <div class="main__user-bar">
+                <article class="main__user-bar_logo">
+                    <img src="../../../../assets/images/logo_bank2.png" alt="bank-logo-large">
+                </article>
+                <article class="main__user-bar_searcher">
+                    <input type="text" placeholder="Please: Tell us what you are looking for">
+                    <app-button>Search</app-button>
+                </article>
+            </div>
+            <article class="main__user-menu">
+                <figure class="isActive main__user-menu_item">
+                    <img src="../../../../assets/images/i-nav1.png" alt="home-icon">
+                    <figcaption>Home</figcaption>
+                </figure>
+                <figure class="main__user-menu_item">
+                    <img src="../../../../assets/images/i-nav2.png" alt="accounts-icon">
+                    <figcaption>Accounts</figcaption>
+                </figure>
+                <figure class="main__user-menu_item">
+                    <img src="../../../../assets/images/i-nav3.png" alt="transfers-icon">
+                    <figcaption>Transfers</figcaption>
+                </figure>
+                <figure class="main__user-menu_item">
+                    <img src="../../../../assets/images/i-nav6.png" alt="payments-icon">
+                    <figcaption>Payments</figcaption>
+                </figure>
+                <figure class="main__user-menu_item">
+                    <img src="../../../../assets/images/i-nav4.png" alt="creditCards-icon">
+                    <figcaption>Credit Cards</figcaption>
+                </figure>
+                <figure class="main__user-menu_item">
+                    <img src="../../../../assets/images/i-nav5.png" alt="mutualFunds-icon">
+                    <figcaption>Mutual Funds</figcaption>
+                </figure>
+                <figure class="main__user-menu_item">
+                    <img src="../../../../assets/images/i-nav7.png" alt="services-icon">
+                    <figcaption>Services</figcaption>
+                </figure>
+            </article>
+            <article class="main__breadcrumbs">
+                <p>You are in: </p>
+                <a href="#"> Home</a>
+            </article>
+            <hr>
+        </main>
+        <aside class="aside">
+            <article class="aside__user-area">
+                <h4>Hadi Farûq</h4>
+                <p><span>Last Logon:</span> 20/02/2020 7:21:15 AM</p>
+                <div class="aside__user-area_personal">
+                    <div class="aside__user-area_personal_settings">
+                        <img src="../../../../assets/images/b-cr-img1.png" alt="settings-icon">
+                        <p><span>My Al Mubasher</span></p>
+                    </div>
+                    <div class="aside__user-area_personal_email">
+                        <img src="../../../../assets/images/b-cr-img2.png" alt="email-icon">
+                        <p><span>My Mailbox</span><br>(3 unread emails)</p>
+                    </div>
+                </div>
+            </article>
+            <article class="aside__information">
+                <div class="aside__information_header">
+                    <h4>Did you know...?</h4>
+                    <p>-</p>
+                </div>
+
+                <div class="aside__information_content">
+                    <p>You can customize 'My status' by rearranging the modules.</p>
+                    <div class="aside__information_content_video">
+                        <p>Watch demo</p>
+                        <img src="../../../../assets/images/i-w-watch.png" alt="video-icon">
+                    </div>
+                </div>
+            </article>
+        </aside>
+    </section>
+</div>
+<footer [ngClass]="isEnglish ? 'en': 'ar'">
+    <div class="footer__nav" [ngClass]="isEnglish ? 'en': 'ar'">
+        <nav>
+            <ul>
+                <li>
+                    <span>Site Map</span>
+                    <span>خريطة الموقع</span>
+                </li>
+                <li>
+                    <span>Contact Us</span>
+                    <span>اتصل بنا</span>
+                </li>
+                <li>
+                    <span>Locations</span>
+                    <span>المواقع</span>
+                </li>
+                <li>
+                    <span>Help</span>
+                    <span>يساعد</span>
+                </li>
+                <li>
+                    <span>FAQ'S</span>
+                    <span>لغة</span>
+                </li>
+                <li>
+                    <a (click)="isEnglish=!isEnglish">
+                        <span>إنجليزي</span>
+                        <span>English</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="footer__information" [ngClass]="isEnglish ? 'en': 'ar'">
+        <span>
+            <p> <a href="#">Online Security Policy</a> | <a href="#">Agreements and Terms and Conditions</a> </p>
+            <p>Copyright © 2020 XXXX Bank. All rights reserved</p>
+        </span>
+
+        <span>
+            <p><a href="">سياسة الأمن عبر الإنترنت</a> | <a href="">الاتفاقيات والشروط والأحكام</a></p>
+            <p>حقوق النشر © 2020 XXXX Bank. كل الحقوق محفوظة</p>
+        </span>
+
+    </div>
+</footer>

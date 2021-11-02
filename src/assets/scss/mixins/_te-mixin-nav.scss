@@ -1,0 +1,9 @@
+@mixin nav {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    ul {
+        @include horizontal-list;
+        @include row;
+    }
+}

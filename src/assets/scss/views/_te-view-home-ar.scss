@@ -1,0 +1,96 @@
+@import '../mixins/mixins.scss';
+.app-home {
+    .header__nav,
+    .footer__nav {
+        &.ar {
+            nav {
+                @include row-reverse;
+                ul {
+                    @include row-reverse;
+                }
+                li {
+                    span {
+                        &:first-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section {
+        &.ar {
+            @include row-reverse;
+            .main {
+                .main__header {
+                    img {
+                        float: left;
+                    }
+                }
+                .main__user-bar {
+                    @include row-reverse;
+                    .main__user-bar_searcher {
+                        //@include row-reverse;
+                    }
+                }
+                .main__user-menu {
+                    @include row-reverse;
+                }
+                .main__breadcrumbs {
+                    @include row-reverse;
+                }
+            }
+            .aside {
+                .aside__user-area {
+                    h4 {
+                        text-align: right;
+                    }
+                    p {
+                        /*
+                        another way to reverse text, not exactly that example requires, but
+                        it fits well with arabic languages demand.
+                        */
+                        @include reverse-text;
+                    }
+                    .aside__user-area_personal {
+                        @include row-reverse;
+                        .aside__user-area_personal_settings {
+                            @include row-reverse;
+                        }
+                        .aside__user-area_personal_email {
+                            @include row-reverse;
+                        }
+                    }
+                }
+                .aside__information {
+                    .aside__information_header {
+                        @include row-reverse;
+                        h4 {
+                            @include reverse-text;
+                        }
+                    }
+                    .aside__information_content {
+                        @include row-reverse;
+                        .aside__information_content_video {
+                            @include row-reverse;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        &.ar {
+            @include row-reverse;
+        }
+        .footer__information {
+            &.ar {
+                span {
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

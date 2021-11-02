@@ -1,0 +1,178 @@
+@import '../mixins/mixins.scss';
+.app-home {
+    .app-home__wrapper {
+        font-family: $primary-font;
+        background-color: white;
+        padding: 10px 20px;
+        section {
+            @include flex;
+            @include row;
+            column-gap: 10px;
+            width: 100%;
+            @media only screen and (max-width: $max-width) {
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            .main {
+                width: 100%;
+                @media only screen and (max-width: $max-width) {
+                    width: 100%;
+                }
+                .main__header {
+                    background-color: $color-blue-dark;
+                    height: 40px;
+                    padding: 5px;
+                    margin-bottom: 5px;
+                    img {
+                        float: right;
+                    }
+                }
+                .main__user-bar {
+                    @include flex;
+                    @include row;
+                    height: 40px;
+                    column-gap: 2px;
+                    @media only screen and (max-width: $max-width) {
+                        width: 100%;
+                    }
+                    .main__user-bar_logo {
+                        background-color: $color-gray-light;
+                        padding: 5px;
+                        text-align: center;
+                        flex-grow: 1;
+                    }
+                    .main__user-bar_searcher {
+                        background-color: $color-gray-light;
+                        padding: 5px;
+                        flex-grow: 1;
+                        justify-content: center;
+                        @include flex;
+                        @include row;
+                        column-gap: 2px;
+                        input {
+                            width: 200px;
+                            border: none;
+                        }
+                         ::placeholder {
+                            font-family: $primary-font;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .main__user-menu {
+                    @media only screen and (max-width: $max-width) {
+                        flex-wrap: wrap;
+                        column-gap: 20px;
+                        justify-content: center;
+                    }
+                    @include flex;
+                    @include row;
+                    column-gap: 2px;
+                    @include margin-between-blocks;
+                    .main__user-menu_item {
+                        background-color: $color-blue-light;
+                        font-size: 10px;
+                        color: $color-white;
+                        text-align: center;
+                        figcaption {
+                            margin-bottom: 3px;
+                        }
+                        &.isActive {
+                            background-color: $color-blue-dark;
+                        }
+                    }
+                }
+                .main__breadcrumbs {
+                    margin: 1rem;
+                    font-size: 10px;
+                    @include flex;
+                    @include row;
+                    align-items: baseline;
+                    a {
+                        @include anchor-orange;
+                    }
+                }
+            }
+            .aside {
+                width: 100%;
+                @media only screen and (max-width: $max-width) {
+                    width: 100%;
+                }
+                color: $color-white;
+                p {
+                    font-size: 12px;
+                }
+                .aside__user-area {
+                    background-color: $color-blue-light;
+                    @include padding-block;
+                    span {
+                        font-weight: bold;
+                    }
+                    .aside__user-area_personal {
+                        @include flex;
+                        @include row;
+                        column-gap: 10px;
+                        margin-top: 1rem;
+                        p {
+                            font-size: 10px;
+                        }
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                        .aside__user-area_personal_settings {
+                            @include flex;
+                            @include row;
+                            column-gap: 3px;
+                        }
+                        .aside__user-area_personal_email {
+                            @include flex;
+                            @include row;
+                            column-gap: 5px;
+                        }
+                    }
+                }
+                .aside__information {
+                    background-color: $color-gray-light;
+                    @include margin-between-blocks;
+                    @include padding-block;
+                    color: $color-blue-dark;
+                    .aside__information_header {
+                        @include flex;
+                        @include row;
+                        justify-content: space-between;
+                        p {
+                            padding: 8px 8px 0 8px;
+                            background-color: $color-blue-dark;
+                            color: $color_white;
+                            text-align: center;
+                        }
+                    }
+                    .aside__information_content {
+                        background-color: $color-white;
+                        color: $color-gray-dark;
+                        @include flex;
+                        @include row;
+                        margin-top: 1rem;
+                        p {
+                            margin: 1rem;
+                        }
+                        .aside__information_content_video {
+                            @include flex;
+                            @include row;
+                            align-items: baseline;
+                            p {
+                                color: $color-orange;
+                                font-weight: bold;
+                            }
+                            img {
+                                margin: 1rem;
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

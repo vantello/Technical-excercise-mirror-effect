@@ -1,0 +1,13 @@
+@mixin reset-list {
+    list-style: none;
+}
+
+@mixin horizontal-list {
+    display: flex;
+    li {
+        @include reset-list;
+        margin: {
+            right: 1.5rem;
+        }
+    }
+}

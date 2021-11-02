@@ -1,0 +1,10 @@
+@import '../mixins/mixins.scss';
+.header__nav {
+    nav {
+        @include nav;
+        justify-content: flex-end;
+        @media (max-width: $max-width) {
+            justify-content: flex-start;
+        }
+    }
+}
